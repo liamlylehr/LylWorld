@@ -4,7 +4,7 @@ import { useRef } from "react";
 import { useState } from "react";
 import { useControls } from 'leva';
 
-import { Map } from "./Map";
+import { Item } from "./Item";
 import Lighting from "./Lighting";
 import CharacterController from "./CharacterController";
 
@@ -45,6 +45,12 @@ export const Experience = () => {
       {/* <ambientLight intensity={0.5} /> */}
       
       <Lighting />
+
+      {/* fender strat */}
+      <Item model="/models/fender_stratocaster_guitar_blue.glb" 
+      position={[2.5, 1.75, 2.5]} 
+      scale={[0.25,0.25,0.25]}
+      rotation={[0, Math.PI+0.4, Math.PI/2]} />
 
       {/* <RigidBody ref={cube} position={[-2.5, 1, 3]} type="dynamic" >
         <Box 
